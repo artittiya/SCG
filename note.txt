@@ -1,0 +1,18 @@
+# Installing Mosquitto MQTT Broker 
+sudo apt-get install mosquitto
+sudo apt-get install mosquitto-clients
+
+# terminal 1
+sudo service mosquitto start
+mosquitto_sub -h 127.0.0.1 -t test 
+// sudo service mosquitto stop
+
+# terminal 2
+mosquitto_pub -h 127.0.0.1 -t test -m "hello world"
+
+# NodeJS + MQTT
+npm install mqtt --save
+
+
+# Node.js MongoDB
+https://www.guru99.com/installation-configuration-mongodb.html
